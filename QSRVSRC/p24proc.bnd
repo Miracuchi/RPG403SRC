@@ -1,0 +1,11 @@
+      /*%METADATA                                                     */
+      /* %TEXT Ex24B : Ext avec langage de liage source BND           */
+      /*%EMETADATA                                                    */
+ STRPGMEXP  PGMLVL(*current)
+    EXPORT     SYMBOL(agefilm)
+    EXPORT     SYMBOL(dureefilm)
+ ENDPGMEXP
+
+ STRPGMEXP  PGMLVL(*PRV)
+    EXPORT     SYMBOL(agefilm)
+ ENDPGMEXP

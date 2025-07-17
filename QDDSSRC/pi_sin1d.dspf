@@ -1,0 +1,38 @@
+      *%METADATA                                                       *
+      * %TEXT Statistiques des sinistres                               *
+      *%EMETADATA                                                      *
+     A          R RECORD1                   CA03(03)
+     A                                  1 21'Application assurances - Statistiq-
+     A                                      ues'
+     A                                      COLOR(WHT)
+     A                                  4  2'Information au '
+     A                                      COLOR(BLU)
+     A                                  6  2'Phase 1 - Informations sur les cli-
+     A                                      ents'
+     A                                      COLOR(TRQ)
+     A                                 11  2'Phase 2 - Informations sur les sin-
+     A                                      istres'
+     A                                      COLOR(TRQ)
+     A                                 17  2'Phase 3 - Informations sur les con-
+     A                                      trats'
+     A                                      COLOR(TRQ)
+     A                                 24  2'F3 = Exit'
+     A                                      COLOR(BLU)
+     A                                  4 18DATE(*SYS *YY)
+     A                                      EDTCDE(Y)
+     A                                      COLOR(BLU)
+     A                                  4 30TIME
+     A                                      COLOR(BLU)
+     A                                  7  3'Nombre total de clients :'
+     A            NBCLI          6Y 0O  7 34EDTCDE(Z)
+     A                                 12  3'Libellé du sinistre 2024 (contrat -
+     A                                      202 du client 20) :'
+     A            DESCSIN       70   O 13  3
+     A                                 18  3'Client qui a le plus nombre de con-
+     A                                      trats'
+     A                                      DSPATR(UL)
+     A                                 19  4'Nom et prénom du client : '
+     A                                 20  4'Nombre de contrat       : '
+     A            NOMPRE        41   O 19 31
+     A            NBMAXCTCLI     3  0O 20 31EDTCDE(Z)
+

@@ -1,0 +1,1 @@
+SINISTRES.FILE: sinistres.table

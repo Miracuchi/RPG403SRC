@@ -1,0 +1,43 @@
+      --%METADATA                                                      *
+      -- %TEXT Table des sinistres                                     *
+      --%EMETADATA                                                     *
+create table SINISTRES (
+
+SIN_NUM NUM(4,0) NOT NULL,
+
+CLI_NUM NUM(6,0) NOT NULL,
+
+CONT_NUM NUM(3,0) NOT NULL,
+
+SIN_DESC VARCHAR(100) NOT NULL,
+
+SIN_DATE DATE,
+
+ETAT CHAR(10),
+
+ACCORD CHAR(1),
+
+MNT_REP NUM(9,2),
+
+PRIMARY KEY(SIN_NUM)
+
+)
+
+RCDMT SIN_FMT;
+
+
+
+LABEL ON COLUMN SINISTRES (SIN_NUM IS 'Numéro de sinistre');
+
+LABEL ON COLUMN SINISTRES (SIN_DESC IS 'Description sinistre');
+
+LABEL ON COLUMN SINISTRES (CLI_NUM IS 'Numéro de client');
+
+LABEL ON COLUMN SINISTRES (CONT_NUM IS 'Numéro de contrat');
+
+LABEL ON COLUMN SINISTRES (ETAT IS 'Etat');
+
+LABEL ON COLUMN SINISTRES (ACCORD IS 'Accord');
+
+LABEL ON COLUMN SINISTRES (MNT_REP IS 'Montant réparation');
+

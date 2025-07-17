@@ -1,0 +1,11 @@
+      *%METADATA                                                       *
+      * %TEXT Fichier physique des clients                             *
+      *%EMETADATA                                                      *
+                                            UNIQUE
+     A          R FMT_CLI
+     A            CLI_NUM        6S 0       COLHDG('Numéro client')
+     A            CLI_NOM       25          COLHDG('Nom client')
+     A            CLI_PRE       15          ALWNULL
+                                            COLHDG('Prenom client')
+     A            CLI_ADR      100A         ALWNULL
+     A          K CLI_NUM

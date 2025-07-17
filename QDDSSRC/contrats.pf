@@ -1,0 +1,15 @@
+      *%METADATA                                                       *
+      * %TEXT Fichier physique des contrats                            *
+      *%EMETADATA                                                      *
+     A                                      UNIQUE
+     A          R CONT_FMT
+     A            CONT_NUM       3S 0       COLHDG('Numéro contrat')
+     A            CLI_NUM        6S 0       COLHDG('Numéro client')
+     A            CONT_DESC     80          COLHDG('Description contrat')
+     A            DATE_SOUSC      L         ALWNULL
+                                            COLHDG('Date de souscription')
+     A            DATE_ECH        L         ALWNULL
+                                            COLHDG('Date d''échéance')
+     A            MNT_COT        7S 2       ALWNULL
+                                            COLHDG('Montant cotisation')
+     A          K CONT_NUM

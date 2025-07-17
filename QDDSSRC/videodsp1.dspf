@@ -1,0 +1,75 @@
+      *%METADATA                                                       *
+      * %TEXT Gestion des films - Format FMT3                          *
+      *%EMETADATA                                                      *
+     A          R FMT1                      CA03(03)
+     A                                  1 32'Recherche de films'
+     A                                      COLOR(WHT)
+     A                                  1  3'FMT1'
+     A                                      COLOR(PNK)
+     A                                  1 71DATE
+     A                                      COLOR(BLU)
+     A                                      EDTCDE(Y)
+     A                                  4  5'Recherche du film dont le numéro d-
+     A                                      e DVD est égal à'
+     A                                  6  5'(saisissez un numéro de DVD, puis -
+     A                                      appuyez sur ENTREE)'
+     A                                 24  3'F3=Exit'
+     A                                      COLOR(BLU)
+     A            CODDVD    R     D  I  4 56REFFLD(CODDVD DVD)
+     A  41                                  ERRMSG('Numéro de DVD inconnu' 41)
+     A            NOMSOCIETE    30     24 30COLOR(WHT)
+     A*
+     A          R FMT2                      CA03(03)
+     A                                  1 32'Recherche de films'
+     A                                      COLOR(WHT)
+     A                                  1  3'FMT2'
+     A                                      COLOR(PNK)
+     A                                  1 71DATE
+     A                                      COLOR(BLU)
+     A                                      EDTCDE(Y)
+     A                                  4  5'Recherche des films dont le titre -
+     A                                      contient'
+     A                                  6  5'(saisissez un critère de recherche-
+     A                                      , puis appuyez sur ENTREE)'
+     A                                 24  3'F3=Exit'
+     A                                      COLOR(BLU)
+     A            RECHERCHE     15   I  4 48
+     A  42                                  ERRMSG('Aucun film ne répond au cri-
+     A                                      ère de recherche' 42)
+     A*
+     A          R FMT3                      CA03(03)
+     A                                      CA10(10)
+     A                                  1  2'FMT3'
+     A                                      COLOR(PNK)
+     A                                  1 33'Détails d''un film'
+     A                                      COLOR(WHT)
+     A                                  1 72DATE
+     A                                      COLOR(BLU)
+     A                                      EDTCDE(Y)
+     A            CODDVD    R     D  O  4 24REFFLD(CODDVD DVD)
+     A            TITRE     R        O  5 24REFFLD(TITRE DVD)
+     A            GENRE     R        O  6 24REFFLD(GENRE DVD)
+     A            ANNEE     R     D  O  7 24REFFLD(ANNEE DVD)
+     A            DUREE     R     D  O  8 24REFFLD(DUREE DVD)
+     A                                  4 14'Code DVD'
+     A                                      COLOR(WHT)
+     A                                  5  9'Titre du film'
+     A                                      COLOR(WHT)
+     A                                  6 12'Code genre'
+     A                                      COLOR(WHT)
+     A                                  7 17'Année'
+     A                                      COLOR(WHT)
+     A                                  8 17'Durée'
+     A                                      COLOR(WHT)
+     A                                 24  2'F3=Exit'
+     A                                      COLOR(BLU)
+     A N43                             24 13'F10=Avec détails'
+     A                                      COLOR(BLU)
+     A  43                             24 13'F10=Sans détails'
+     A                                      COLOR(BLU)
+     A  43        DETAIL1       15   O  7 29COLOR(BLU)
+     A*%%RS+<record-sequences>
+     A*%%RS+ <sequence name="Sans titre">
+     A*%%RS+  <device type="display" width="80" height="24" />
+     A*%%RS+ </sequence>
+     A*%%RS </record-sequences>

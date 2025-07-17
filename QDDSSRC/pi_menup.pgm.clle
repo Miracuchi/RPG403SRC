@@ -1,0 +1,18 @@
+      /*%METADATA                                                     */
+      /* %TEXT Programme CL : gestion du menu                         */
+      /*%EMETADATA                                                    */
+PGM
+             DCLF       FILE(RPG403/PI_MENUD)
+             SNDRCVF    RCDFMT(RECORD1)
+/*                       exfmt                                                */
+             DOWHILE    COND(&IN03 = '0')
+
+             SELECT
+                WHEN       COND(&CHOIX *EQ '1') THEN(CALL PGM(PI_SIN1P))
+                WHEN       COND(&CHOIX *EQ '2') THEN(DSPMSG)
+                WHEN       COND(&CHOIX *EQ '3') THEN(WRKSPLF)
+             ENDSELECT
+             SNDRCVF    RCDFMT(RECORD1)
+
+             ENDDO
+ENDPGM

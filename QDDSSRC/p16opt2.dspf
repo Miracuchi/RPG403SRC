@@ -1,0 +1,11 @@
+      *%METADATA                                                       *
+      * %TEXT Ex 16 - OPT2                                             *
+      *%EMETADATA                                                      *
+     A          R P16OPT2E                  CA03(03)
+     A                                  1 28'Recherche de date'
+     A                                  4 11'Date saisie :'
+     A                                  6 11'Début du mois :'
+     A                                  8 11'Fin du mois :'
+     A            CURRDATE        L  B  4 31DATFMT(*EUR)
+     A            MTHBEG          L  O  6 31DATFMT(*EUR)
+     A            MTHEND          L  O  8 31DATFMT(*EUR)

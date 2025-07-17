@@ -1,0 +1,21 @@
+      *%METADATA                                                       *
+      * %TEXT Fichier écran menu                                       *
+      *%EMETADATA                                                      *
+     A          R RECORD1                   CA03(03)
+     A                                  1 21'Pépinière IBM i - Projet intermédi-
+     A                                      aire'
+     A                                      COLOR(WHT)
+     A                                  1  2USER
+     A                                  3 33'MENU PRINCIPAL'
+     A                                      COLOR(BLU)
+     A                                  7 11'1. Statistiques assurances (client-
+     A                                      s, contrats, sinistres)'
+     A                                  9 11'2. Affichage des messages'
+     A                                 11 11'3. Gestion des spoules'
+     A                                 14 11'Votre choix :'
+     A            CHOIX          1M  B 14 25VALUES('1' '2' '3')
+     A                                 24  2'F3 = Exit'
+     A                                      COLOR(BLU)
+     A                                  1 71DATE(*SYS *YY)
+     A                                      EDTCDE(Y)
+

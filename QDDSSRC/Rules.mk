@@ -1,0 +1,27 @@
+CONTRATS.FILE: contrats.pf
+CLIENTS.FILE: clients.pf
+DSP21A.FILE: dsp21a.dspf
+DSP21A2.FILE: dsp21a2.dspf
+DPS21BONUS.FILE: dps21bonus.dspf
+DSP21B.FILE: dsp21b.dspf
+DSP21C.FILE: dsp21c.dspf
+DSP22A1.FILE: dsp22a1.dspf
+DSP22B2.FILE: dsp22b2.dspf
+DSP23A.FILE: dsp23a.dspf
+DSP24C.FILE: dsp24c.dspf
+DVD_BY_AN.FILE: dvd_by_an.lf
+DSP23C.FILE: dsp23c.dspf
+P16OPT2.FILE: p16opt2.dspf
+PI_MENUD.FILE: pi_menud.dspf
+PI_MENUP.PGM: pi_menup.pgm.clle
+DSP22B1.FILE: dsp22b1.dspf
+PI_SIN1D.FILE: pi_sin1d.dspf
+SINCONTCLI.FILE: sincontcli.lf SINISTRES.FILE
+VIDEOD1.FILE: videod1.dspf
+VIDEODSP1.FILE: videodsp1.dspf
+VIDEODSP1B.FILE: videodsp1b.dspf
+VIDEODSP2.FILE: videodsp2.dspf
+VIDEODSP2B.FILE: videodsp2b.dspf
+VIDEOD2A.FILE: videod2a.dspf
+VIDEOPRT1.FILE: videoprt1.prtf
+VIDEOPRT1B.FILE: videoprt1b.prtf

@@ -1,0 +1,11 @@
+      *%METADATA                                                       *
+      * %TEXT Exercice 19A  Fichiers imprimante                       *
+      *%EMETADATA                                                      *
+     A          R ENTETE                    SPACEA(1)
+     A                                     2'Liste des films' SPACEA(1)
+     A                                     2'Code'
+     A                                   +14'Titre du film'
+     A          R DETAIL                    SPACEA(1)
+     A            CODDVD         5  0      2
+     A            TITRE         40       +13
+

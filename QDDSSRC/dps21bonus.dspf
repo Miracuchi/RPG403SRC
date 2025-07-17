@@ -1,0 +1,43 @@
+     A                                      CA03(03)
+     A          R FMTENR                    SFL
+     A            TITRE     R        O 11  6REFFLD(FMTDVD/TITRE RPG403/DVD)
+     A            ANNEE     R        O 11 51REFFLD(FMTDVD/ANNEE RPG403/DVD)
+     A          R FMTCTL                    SFLCTL(FMTENR)
+     A  32                                  SFLDSPCTL
+     A  32                                  SFLDSP
+     A                                      SFLPAG(10)
+     A                                      SFLSIZ(11)
+     A                                      CA12(12)
+     A  34                                  SFLEND(*MORE)
+     A                                      OVERLAY
+     A  30                                  SFLCLR
+     A                                      PROTECT
+     A            HAUTPAGE       5  0H      SFLSCROLL
+     A            RANG           4  0H      SFLRCDNBR
+     A                                 10  6'Titre du film'
+     A                                      COLOR(TRQ)
+     A                                 10 51'Année'
+     A                                      COLOR(TRQ)
+     A          R TOUCHES
+     A                                 24  3'F3 = Exit'
+     A                                      COLOR(BLU)
+     A                                 24 13'F12 = Annuler'
+     A                                      COLOR(BLU)
+     A          R FMT2                      OVERLAY
+     A                                      CA12(12)
+     A                                  1 32'Recherche de films'
+     A                                      COLOR(WHT)
+     A                                  1  3'FMT2'
+     A                                      COLOR(PNK)
+     A                                  1 71DATE
+     A                                      COLOR(BLU)
+     A                                      EDTCDE(Y)
+     A                                  4  6'Recherche des films dont le titre -
+     A                                      contient'
+     A                                  8  5'(saisissez un critère de recherche-
+     A                                      , puis appuyez sur ENTREE)'
+     A            RTITRE        15   I  6  6
+     A  42                                  ERRMSG('Rentrer un critère de reche-
+     A                                      rche' 42)
+     A  43                                  ERRMSG('Aucune correspondance' 43)
+     A            RANNEE         4N 0I  6 30

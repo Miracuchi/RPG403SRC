@@ -1,0 +1,7 @@
+      *%METADATA                                                       *
+      * %TEXT Fichier logique des sinistres : contrats : clients       *
+      *%EMETADATA                                                      *
+     A          R SIN_FMT                   PFILE(SINISTRES)
+     A          K CLI_NUM
+     A          K CONT_NUM
+     A          K SIN_NUM

@@ -1,0 +1,31 @@
+      *%METADATA                                                       *
+      * %TEXT Exercice 21 - A                                          *
+      *%EMETADATA                                                      *
+     A                                      CA03(03)
+     A                                      CA08(08)
+     A                                      CA09(09)
+     A          R FMTENR                    SFL
+     A            TITREF    R        O  4  2REFFLD(FMTDVD/TITRE RPG403/DVD)
+     A            ANNEEF    R        O  4 51REFFLD(FMTDVD/ANNEE RPG403/DVD)
+     A          R FMTCTL                    SFLCTL(FMTENR)
+     A                                      SFLDSPCTL
+     A                                      SFLDSP
+     A                                      SFLPAG(10)
+     A                                      SFLSIZ(11)
+     A  34                                  SFLEND(*MORE)
+     A  30                                  SFLCLR
+     A                                      OVERLAY
+     A                                  3  2'Titre du film'
+     A                                      COLOR(TRQ)
+     A                                  3 51'Année'
+     A                                      COLOR(TRQ)
+     A                                  1 31'Liste des films'
+     A                                      COLOR(TRQ)
+     A          R TOUCHES
+     A                                 24  3'F3 = Exit'
+     A                                      COLOR(BLU)
+     A                                 24 15'F8 = Tri sur année'
+     A                                      COLOR(BLU)
+     A                                 24 36'F9 = Tri sur année'
+     A                                      COLOR(BLU)
+
